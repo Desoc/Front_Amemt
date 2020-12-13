@@ -1,0 +1,492 @@
+
+/* Contenedores-Rows-Paddings-Margins-Borders */
+
+* {
+    box-sizing: border-box;
+}
+
+.contenedor {
+    padding: 5px 7px 7px 10px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+
+.ss {
+    margin: 20px;   
+}
+
+/* Fin Contenedores-Rows-Paddings-Margins-Borders */
+
+/* Background Colors */
+
+.bg-color-white {
+    background-color: white;
+}
+
+.bg-color-black {
+    background-color: black;
+}
+
+.bg-color-lb {
+    background-color: rgb(30, 179, 199)
+}
+
+.bg-color-gray {
+    background-color: gray;
+}
+
+.bg-color-green {
+    background-color: green;
+}
+
+.bg-color-db {
+    background-color: darkblue;
+}
+
+.bg-color-dred {
+    background-color: darkred;
+}
+
+.bg-color-dyellow {
+    background-color: rgb(231, 169, 36);
+}
+
+.bg-color-dgreen {
+    background-color: rgb(16, 90, 9);
+}
+
+.bg-color-dbrown {
+    background-color: rgb(150, 42, 0);
+}
+
+.bg-color-aquag {
+    background-color: rgb(4, 124, 98);
+}
+
+/* Fin Background-Colors */
+
+
+/* Navbar */
+
+
+.navbar-brand img {
+    height: 50px;
+    
+}
+
+/* Fin Navbar */
+
+
+/* Scroll */
+
+
+
+.entry-content {
+    
+    content: "";
+    display: table;
+    table-layout: fixed;
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+
+
+#Contact::before {
+    display: block;
+    content: " ";
+    margin-top: -65px;
+    height: 65px;
+    visibility: hidden;
+}
+
+
+/* Scroll Fin */
+
+/* Carousel */
+
+.carousel-item {
+    width: 100%;
+    height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+  
+/* Fin Carousel */
+
+/* Cards */
+
+.card{
+    flex: 1;
+    flex-basis: 300px;
+    flex-grow: 0;
+    height: 440px;
+    background: rgb(116, 116, 116);
+    border: 2px solid #fff;
+    box-shadow: 0px 4px 7px rgba(0,0,0,.5);
+    cursor: pointer;
+    transition: all .5s cubic-bezier(.8,.5,.2,1.4);
+    overflow: hidden;
+    position: relative;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0;
+}
+
+.descriptions{
+    position: absolute;
+    top:0px;
+    left:0px;
+    background-color: rgba(58, 58, 58, 0.699);
+    width:100%;
+    height:100%;
+    transition: all .7s ease-in-out;
+    padding: 25px;
+    box-sizing: border-box;
+    clip-path: circle(0% at 100% 100%);
+}
+
+.card-text {
+    align-content: center;
+}
+
+.card:hover .descriptions{
+    left:0px;
+    transition: all .7s ease-in-out;
+    clip-path: circle(75%);
+}
+
+.card h1{
+    color: #ff3838;
+    letter-spacing: 1px;
+    margin: 0px;
+}
+.card p{
+    line-height: 24px;
+    height: 70%;
+}
+
+.card button{
+    width: fit-content;
+    height: 40px;
+    cursor: pointer;
+    border-style: none;
+    background-color: #739245;
+    color:#fff;
+    font-size: 15px;
+    outline: none;
+    box-shadow: 0px 2px 3px rgba(0,0,0,.4);
+    transition: all .5s ease-in-out;
+}
+.card button:hover{
+    transform: scale(.95) translateX(-5px);
+    transition: all .5s ease-in-out;
+}
+
+
+.card-body {
+    padding: 0.5rem;
+}
+
+.card img {
+    display: block;
+    border-radius: 4px;
+    height: auto;
+    max-width: 100%;
+    border: 0;
+    padding: 10px;
+}
+
+.cardSet1 {
+    background-color: #669999;
+}
+
+.cardSet2 {
+    background-color: #739245;
+}
+
+.cardSet3 {
+    background-color: #669099;
+}
+
+h3.card-title {
+    font-size: 1.5rem;
+}
+
+h5.card-subtitle {
+    font-size: 1.2rem;
+}
+
+p.card-text {
+    padding-bottom: 0.8rem;;
+    line-height: 1.2rem;
+}
+
+/* Fin Cards */
+
+
+
+
+/* Footer */
+
+footer {
+    align-self: flex-end;
+    background-color: #739245;
+    line-height: 3;
+    text-align: center;
+    width: 100%;
+    color: white;
+}
+
+
+footer .social img {
+    height: 40px;
+    width: 40px;
+    margin: 0 5px;
+}
+
+
+
+
+footer .mail img {
+    height: 40px;
+    width: 40px;
+    
+}
+
+/* Fin Footer */
+
+/* Link Effects */
+
+.link {
+    color: #866947;
+}
+
+.link:hover { 
+    color: #ffffff; 
+    text-decoration: none;
+}
+
+/* Fin Link Effects */
+
+/*Font Color*/
+
+.fnt-color-white {
+    color: white;
+}
+
+.fnt-color-black {
+    color: black;
+}
+
+.sombra-fnt {
+    text-shadow: black 0.1em 0.1em 0.2em
+}
+
+/* Fin Font Color */
+
+/* Tamanio de fuente*/
+.fnt-smll {
+    font-size: small;
+}
+
+/* Fin tamanio de fuente */
+
+
+.form-control{
+    width: auto;
+}
+
+
+/* Modal styles */
+.modal .modal-dialog {
+    max-width: 400px;
+    
+}
+
+
+.modal .modal-content {
+    border-radius: 1px;
+}
+
+.modal .modal-footer {
+    background: #ecf0f1;
+    border-radius: 0 0 1px 1px;
+}
+
+.modal .modal-title {
+    display: inline-block;
+}
+
+.modal .form-control {
+    border-radius: 1px;
+    box-shadow: none;
+    border-color: #dddddd;
+}
+
+.modal textarea.form-control {
+    resize: vertical;
+}
+
+.modal .btn {
+    border-radius: 1px;
+    min-width: 100px;
+}
+
+.modal form label {
+    font-weight: normal;
+}
+/* FIN Modal styles */
+
+
+/* progress bar */
+
+.btn-spinner{
+    display: flex;
+    margin-top: 60px;
+    margin-left: 340px;
+}
+
+
+.hidden{
+
+    visibility: hidden;
+}
+/* Fin progress bar */
+
+
+/* Tabla */
+
+.table{
+    text-align: center;
+}
+
+/* FIN Tabla */
+
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+  
+  /* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+  /* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+input:checked + .slider {
+    background-color: #2196F3;
+}
+  
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+  
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+  
+  /* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+  
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* Fin sliders */
+
+
+/* Botones */
+
+.btns {
+    padding: 1em 2.1em 1.1em;
+    border-radius: 3px;
+    margin: 8px 8px 8px 8px;
+ 
+    display: inline-block;
+    
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    font-family: sans-serif;
+    font-weight: 800;
+    font-size: .85em;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    -webkit-box-shadow: 0em -0.3rem 0em rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0em -0.3rem 0em rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0em -0.3rem 0em rgba(0, 0, 0, 0.1) inset;
+    position: relative;
+}
+
+.btns:hover, .btns:focus {
+    opacity: 0.8;
+}
+
+.btns:active {
+    -webkit-transform: scale(0.80);
+    -moz-transform: scale(0.80);
+    -ms-transform: scale(0.80);
+    -o-transform: scale(0.80);
+    transform: scale(0.80);
+}
+
+.btns.block {
+    display: block;
+}
+
+
+/* Alinia los botones-imputs-switchs al centro */
+.inp{
+    margin:0px auto; 
+    display:block;
+    text-align: center;
+}
+
+/* FIN  Botones */

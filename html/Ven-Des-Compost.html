@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Titulo e imagen que se muesta en el navegador -->
+  <title>Vivero</title>
+  <link rel="icon" type="image/png" href="..\imagenes\logo.ico" />
+  <!-- Fin Titulo e imagen que se muesta en el navegador -->
+
+  <!-- CSS - JS  -->
+
+  <link rel="stylesheet" href="..\fontawesome\css\fontawesome.css"><!-- FONTAWESOME  -->
+
+  <link rel="stylesheet" href="..\fontawesome\css\brands.css"><!-- FONTAWESOME  -->
+
+  <link rel="stylesheet" href="..\fontawesome\css\solid.css"><!-- FONTAWESOME  -->
+
+  <link rel="stylesheet" href="..\boostrap\bootstrap.css"><!-- BOOTSTRAP  -->
+
+  <link rel="stylesheet" href="..\CSS\css-vivero.css"><!-- USUARIO  -->
+
+  <link rel="stylesheet" href="..\CSS\Text-Consejo-Plantar.css"><!-- USUARIO  -->
+
+  <script src="..\jquery\jquery-3.5.1.slim.min.js"></script><!-- JQUERY  -->
+
+  <script src="..\jquery\popper.min.js"></script><!-- POPPER  -->
+
+  <script src="..\js\bootstrap.min.js"></script><!-- BOOTSTRAP  -->
+
+  <script src="..\js\smooth-scroll.min.js"></script><!-- SMOOT-SCROLL  -->
+
+  <!-- Script que permite cambiar la velocias del scroll automatico -->
+  <script>var scroll = new SmoothScroll('a[href*="#"]', {
+      speed: 3000
+    });
+  </script>
+
+
+
+  <!-- Fin CSS - JS  -->
+
+</head>
+
+<body>
+
+  <!-- Dentro de este body se encuentra un navbar, un conteiner con texto e imagenes,
+       y un footer  -->
+
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+
+    <!-- Icono en el navbar -->
+
+    <a class="navbar-brand" href="Index.html"><img src="..\imagenes\logo.png" alt="Icono"></a>
+
+    <!-- Fin Icono en el navbar -->
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <!-- Boten del navbar que lleva al Index.html -->
+
+          <a class="nav-link" href="Index.html">Inicio <span class="sr-only">(current)</span></a>
+
+          <!-- Fin Boten del navbar que lleva al Index.html -->
+
+        </li>
+        <li class="nav-item">
+
+          <!-- Boten del navbar que lleva a los Medios de contacto -->
+
+          <a class="nav-link" href="#Contact">Contacto</a>
+
+          <!-- Fin Boten del navbar que lleva a los Medios de contacto -->
+
+        </li>
+        <li class="nav-item dropdown">
+
+          <!-- Boten del navbar que se desplaza para mostrar otras paginas a las cuales ir -->
+
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Consejos
+          </a>
+
+          <!-- Fin Boten del navbar que se desplaza para mostrar otras paginas a las cuales ir -->
+
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+
+            <!-- Botenes del navbar "Consejo" desplazados que llevan a los HTML "Cuando plantar.html" "Macetas-y-diferencias.html"
+                 "Ven-Des-Compost.html" -->
+
+            <a class="dropdown-item" href="Cuándo plantar.html">¿Cuándo plantar? La mejor época.</a>
+            <a class="dropdown-item" href="Macetas-y-diferencias.html">Macetas ¿Cúal elegir?</a>
+            <a class="dropdown-item" href="Ven-Des-Compost.html">Ventajas y Desventajas del COMPOST</a>
+
+            <!--Fin Botenes del navbar "Consejo" desplazados que llevan a los HTML "Cuando plantar.html" "Macetas-y-diferencias.html"
+                 "Ven-Des-Compost.html" -->
+
+          </div>
+        </li>
+        <li class="nav-item">
+
+          <!-- Boten del navbar que lleva a la tabla de productos -->
+
+          <a class="nav-link" href="Tabla_productos.html">Productos</a>
+
+          <!-- Fin Boten del navbar que lleva a la tabla de producto -->
+
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Navbar -->
+
+
+  <!-- Container -->
+  <div class="container">
+
+
+    <!-- Margin -->
+    <div id="primary" class="mx-auto mt-auto mb-5">
+
+
+
+      <!-- Header -->
+      <header class="entry-header">
+        <h1 class="entry-title h2-style">VENTAJAS Y DESVENTAJAS DEL COMPOST</h1>
+      </header>
+      <!--Fin Header-->
+
+      <!-- Photo -->
+      <figure class="Foto-estilo"><img src="..\imagenes\Compost-2.jpg" alt="Compost-2"></figure>
+      <!-- Fin Photo -->
+
+      <!-- Text -->
+      <div class="entry-content font-not">
+
+
+        <h2>La utilización del compost como enmienda orgánica es importante para el acondicionamiento del suelo,
+          ya que la presencia de materia orgánica en el suelo en las proporciones adecuadas.
+        </h2>
+
+
+        <h3>¿Qué es el compost?</h3>
+
+
+
+        <p>Es una enmienda orgánica estabilizada e higienizada obtenido por descomposición aeróbica bajo condiciones
+          controladas.
+          Su aspecto tiene que asemejarse a las sustancias húmicas y debe estar libre de patógenos y malas hierbas.
+        </p>
+
+
+
+        <p>La utilización del compost como enmienda orgánica es importante para el acondicionamiento del suelo,
+          ya que la presencia de materia orgánica en el suelo en las proporciones adecuadas nos hará que el suelo
+          adquiera una mayor fertilidad y evitaremos problemas de erosión y desertización.
+        </p>
+
+
+
+        <p>La ventaja principal del compost es que es mucho más fácil de manejar que los estiércoles, almacenándose
+          sin problemas de olores o de insectos, pudiéndose aplicar en cualquier época del año.
+          El compost convierte el nitrógeno presente en los estiércoles en una forma orgánica más estable lo que
+          conlleva menores pérdidas de nitrógeno. El compost es un producto comerciable y muy potencial para aquellos
+          agricultores que practican la agricultura ecológica, viveros, particulares con jardín o huerto.
+        </p>
+
+
+
+        <p>Como desventajas que se le atribuyen; supone una cierta inversión inicial ya que es necesario una serie
+          de equipos y mínimas instalaciones, una disponibilidad de terreno para poder almacenar los materiales de
+          partida,
+          el compost que se encuentra en la fase de maduración, productos ya finalizados etc. Un clima óptimo para el
+          proceso del compost es importante ya que si nos encontramos en un lugar frío, el proceso se alargará ya que
+          pueden aparecer problemas de encharcamiento y anaerobiosis.
+        </p>
+
+
+        <p>Esperamos que esta información sea de tu agrado.</p>
+
+
+
+
+
+      </div>
+      <!-- Fin Text -->
+
+
+    </div>
+    <!-- Fin Margin -->
+
+  </div>
+  <!-- Fin Container -->
+
+
+
+  <!-- Footer -->
+  <footer class="page-footer font-small teal pt-4">
+
+    <!-- Footer Text -->
+    <div class="container-fluid text-center ">
+
+      <!-- Grid row -->
+      <div class="row">
+
+        <!-- Contacto  -->
+        <div class="col-md-6 mt-md-0 mt-3 sombra-fnt">
+          <h5 id="Contact" class="text-uppercase font-weight-bold ">Contacto</h5>
+
+          <!-- Ubicacion  -->
+          <h6 class="text-uppercase font-weight-bold mail">
+            <i class="fas fa-map-marker-alt" style='font-size:22px'></i>
+            Ubicacion
+            <p class="fnt-smll">Calle falsa 123</p>
+          </h6>
+          <!-- Fin Ubicacion  -->
+
+          <!-- Mail  -->
+          <h6 class="text-uppercase font-weight-bold mail">
+            <i class="fas fa-envelope" style='font-size:22px'></i>
+            Mail
+            <p>
+              <a class="link fnt-smll"
+                href="mailto:octaviodesiate@institutoamemt.edu.ar">octaviodesiate@institutoamemt.edu.ar</a>
+            </p>
+          </h6>
+          <!-- Fin Mail  -->
+
+        </div>
+        <!-- Fin Contacto  -->
+
+        <hr class="clearfix w-100 d-md-none pb-3">
+
+        <!-- Redes Sociales  -->
+        <div class="col-md-6 mb-md-0 mb-3 text-center sombra-fnt">
+          <h5 class="text-uppercase font-weight-bold ">Redes Sociales</h5>
+
+          <h6 class="text-uppercase font-weight-bold mail">
+            <a class="link fnt-smll" href="https://www.instagram.com/explore/tags/vivero/">
+              <i class="fab fa-instagram" style='font-size:36px'></i>
+              Instragram
+            </a>
+            <p>
+
+            </p>
+          </h6>
+        </div>
+        <!-- Fin Redes Sociales  -->
+
+      </div>
+      <!-- Grid row -->
+
+    </div>
+    <!-- Footer Text -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center bg-color-black">
+      © 2020 Copyright: Vivero
+    </div>
+    <!-- Fin Copyright -->
+
+  </footer>
+  <!-- Fin Footer -->
+
+</body>
+
+</html>
