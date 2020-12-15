@@ -66,7 +66,7 @@ function generateTable(table, data) {
 
     btnEdit.onclick = function () {
         editItem(row);// Al clickear se llama a la funcion para editar la row
-    };                              // se le pasa la row
+    };                // se le pasa la row
 
     
     const btnDelete = document.createElement("td"); //agrega btn borrar y su handler
@@ -91,7 +91,7 @@ function deleteItem(index) {
 
   elimn.onclick = function () {
     let Spinner = document.getElementById("boton-deleted");
-    Spinner.classList.add("visible"); // no me deja desaparecer la barra
+    Spinner.classList.add("visible");
     
     setTimeout(() => {
       let data = Object.keys(datos[0]);
