@@ -55,7 +55,7 @@ function generateTable(table, data) {
       cell.appendChild(text);
     }
 
-    
+
     const btnEdit = document.createElement("td"); //agrega btn editar y su handler
     btnEdit.innerHTML = "<i class= 'fas fa-edit' style='font-size:25px'></i>";//Icono de font awesome
     btnEdit.setAttribute("data-toggle","modal");// Se agrega el atributo para mostrar el modal
@@ -68,7 +68,7 @@ function generateTable(table, data) {
         editItem(row);// Al clickear se llama a la funcion para editar la row
     };                // se le pasa la row
 
-    
+
     const btnDelete = document.createElement("td"); //agrega btn borrar y su handler
     btnDelete.innerHTML = "<i class= 'fas fa-trash-alt' style='font-size:25px'></i>";//Icono de font awesome
     btnDelete.setAttribute("data-toggle","modal");// Se agrega el atributo para mostrar el modal
@@ -80,7 +80,7 @@ function generateTable(table, data) {
     btnDelete.onclick = function () {
       deleteItem(row.rowIndex);// Al clickear se llama a la funcion para eliminar la row
     };                         // se le pasa el indice de la row
-    
+
   }
 }
 
@@ -92,7 +92,7 @@ function deleteItem(index) {
   elimn.onclick = function () {
     let Spinner = document.getElementById("boton-deleted");
     Spinner.classList.add("visible");
-    
+
     setTimeout(() => {
       let data = Object.keys(datos[0]);
       data.splice(index, 1);
@@ -105,7 +105,7 @@ function deleteItem(index) {
 
 /* Funcion para editar row de la tabla */
 function editItem(row) {
-  
+
   nombreEditar = document.getElementById("nombreEditar");
   categoriaEditar = document.getElementById("categoriasss");
   preciosEditar = document.getElementById("preciosEditar");
@@ -124,7 +124,7 @@ function editItem(row) {
   modificar.onclick = function () {
     let Spinner = document.getElementById("boton-edit");
     Spinner.classList.add("visible");
-    
+
     setTimeout(() => {
       row.cells[0].innerHTML = nombreEditar.value;
       row.cells[1].innerHTML = categoriasss.value;
@@ -149,20 +149,20 @@ let spinner = () => {
 
 /* funcion que inserta el dato nuevo en la tabla */
 let insertarDato = () => {
-  
+
   nombre = document.getElementById("nombre");
   categoria = document.getElementById("categoria");
   precios = document.getElementById("precio");
-  
 
-    let nuevaRow = document.createElement("tr"); 
- 
+
+    let nuevaRow = document.createElement("tr");
+
     let nuevaCell = document.createElement("td");
     nuevaCell.innerHTML = nombre.value;
- 
+
     let nuevaCell2 = document.createElement("td");
     nuevaCell2.innerHTML = categoria.value;
- 
+
     let nuevaCell3 = document.createElement("td");
     nuevaCell3.innerHTML = precios.value
 
@@ -188,7 +188,7 @@ let insertarDato = () => {
     botonEliminar.addEventListener("click", () => {
       deleteItem(nuevaRow.rowIndex);// Al clickear se llama a la funcion para eliminar la row
     });                             // se le pasa el indice de la row
-  
+
    tbdy = document.querySelector("tbody");
 
    tbdy.appendChild(nuevaRow)// Se inserta la row en el tbody
@@ -197,7 +197,7 @@ let insertarDato = () => {
    nuevaRow.appendChild(nuevaCell3)
    nuevaRow.appendChild(botonEditar)
    nuevaRow.appendChild(botonEliminar)
- 
+
     const barraSpinner = document.getElementById("boton-cargar").classList.remove("visible");
 }
 
@@ -241,7 +241,7 @@ function filterTable() {
   for (let row of rows) {
     cells = row.getElementsByTagName("td");
     product = cells[1] || null;
-    
+
     if (filter === "All" || !product || (filter === product.textContent)) {
       row.style.display = "";
     }
@@ -261,12 +261,13 @@ function Reset() {
 const filtroEl = document.getElementById('filtroTipo');
 const switchDropdown = document.getElementById('switch');
 
-/* Listener que cuando el switch saca el "hidden" 
+/* Listener que cuando el switch saca el "hidden"
    llama a la funcion filterTable() */
 switchDropdown.addEventListener("click", () => {
-  filterTable(); 
+  filterTable();
   filtroEl.classList.toggle('hidden');
 });
 
-
+sd = new Date().getFullYear()
+console.log(sd)
 

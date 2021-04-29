@@ -17,7 +17,7 @@
 
 
 .ss {
-    margin: 20px;   
+    margin: 20px;
 }
 
 /* Fin Contenedores-Rows-Paddings-Margins-Borders */
@@ -76,7 +76,7 @@
 
 .navbar-brand img {
     height: 50px;
-    
+
 }
 
 /* Fin Navbar */
@@ -87,7 +87,7 @@
 
 
 .entry-content {
-    
+
     content: "";
     display: table;
     table-layout: fixed;
@@ -118,7 +118,13 @@
     -o-background-size: cover;
     background-size: cover;
 }
-  
+
+@media only screen and (max-width: 690px) {
+    .carousel-item p{
+        visibility: collapse;
+    }
+}
+
 /* Fin Carousel */
 
 /* Cards */
@@ -140,7 +146,7 @@
 .card {
     background-color: #fff;
     border: 1px solid rgba(0,0,0,.125);
-    border-radius: 0;
+    border-radius: 0.1;
 }
 
 .descriptions{
@@ -261,7 +267,7 @@ footer .social img {
 footer .mail img {
     height: 40px;
     width: 40px;
-    
+
 }
 
 /* Fin Footer */
@@ -272,8 +278,8 @@ footer .mail img {
     color: #866947;
 }
 
-.link:hover { 
-    color: #ffffff; 
+.link:hover {
+    color: #ffffff;
     text-decoration: none;
 }
 
@@ -311,7 +317,7 @@ footer .mail img {
 /* Modal styles */
 .modal .modal-dialog {
     max-width: 400px;
-    
+
 }
 
 
@@ -381,14 +387,14 @@ footer .mail img {
     width: 60px;
     height: 34px;
 }
-  
+
   /* Hide default HTML checkbox */
 .switch input {
     opacity: 0;
     width: 0;
     height: 0;
 }
-  
+
   /* The slider */
 .slider {
     position: absolute;
@@ -401,7 +407,7 @@ footer .mail img {
     -webkit-transition: .4s;
     transition: .4s;
 }
-  
+
 .slider:before {
     position: absolute;
     content: "";
@@ -413,26 +419,26 @@ footer .mail img {
     -webkit-transition: .4s;
     transition: .4s;
 }
-  
+
 input:checked + .slider {
     background-color: #2196F3;
 }
-  
+
 input:focus + .slider {
     box-shadow: 0 0 1px #2196F3;
 }
-  
+
 input:checked + .slider:before {
     -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);
     transform: translateX(26px);
 }
-  
+
   /* Rounded sliders */
 .slider.round {
     border-radius: 34px;
 }
-  
+
 .slider.round:before {
     border-radius: 50%;
 }
@@ -446,9 +452,9 @@ input:checked + .slider:before {
     padding: 1em 2.1em 1.1em;
     border-radius: 3px;
     margin: 8px 8px 8px 8px;
- 
+
     display: inline-block;
-    
+
     -webkit-transition: 0.3s;
     -moz-transition: 0.3s;
     -o-transition: 0.3s;
@@ -484,7 +490,7 @@ input:checked + .slider:before {
 
 /* Alinia los botones-imputs-switchs al centro */
 .inp{
-    margin:0px auto; 
+    margin:0px auto;
     display:block;
     text-align: center;
 }
